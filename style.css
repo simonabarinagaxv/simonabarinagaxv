@@ -1,0 +1,471 @@
+/*ESTILOS GENERALES*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(/ASSETS/img/5.png);
+    font-size: 15px;
+    margin: 0 auto;
+}
+
+section{
+    display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    height: 25em;
+    padding: 1em;
+}
+
+section:nth-child(odd) { 
+    background-color: #376C42 !important; 
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+section:nth-child(even) {
+    background-color: #F0F7F4 !important;
+   
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.contenedor_tarjetas { 
+    grid-column: span 12;  
+}
+
+
+.contenido_font{
+    color: #474A2C;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 800;
+    font-size: 1.2em;
+    letter-spacing: 0.6px;
+    padding: 0.5em;
+
+ }
+
+ .header_font{
+    color: #376C42;
+    font-family: 'Apricots', sans-serif;
+    font-weight: 400;
+    font-size: 5rem;
+    letter-spacing: 0.1em;
+ }
+
+ .color_invertido{
+    color: #F0F7F4;
+ }
+
+ .contenedor_fila{
+    display: flex;
+        flex-direction: row;
+ }
+
+ /*BOTONES*/
+.contenedor_boton{
+    padding:1em;
+}
+
+.boton_ancla{  
+    background-color: #1EAE5A;
+    border-radius: 5px;
+    color: #F0F7F4;
+    display: inline-block;
+    font-family: "Poppins", serif;
+    padding: 0.3rem;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    width: 15em;
+}
+
+.boton_invertido{
+    background-color: #F0F7F4;
+    color: #474A2C;
+}
+
+
+/*PRESENTACION - FECHA Y DRESSCODE EVENTO*/
+
+#entrada{
+    background-image: url(/Assets/fotoportada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: #F0F7F4;
+    height: 100vh;
+}
+
+
+#entrada::before{
+    background-color: #0c0d086e;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+
+#titulo_entrada, #info_evento, .ver_mas{
+    grid-column: span 12;
+    z-index: 2;
+}
+
+#titulo_entrada{
+    display: flex;
+        justify-content: center;
+        font-size: 3.5em;    
+    text-align: center;
+    position: relative;
+        top: 5%;
+   
+}
+
+#titulo_principal{
+    color: #F0F7F4;
+    font-family: 'Apricots', sans-serif;
+    font-weight: 500;
+    font-size: 2.8em;
+}
+
+/*BIENVENIDA*/
+#bienvenida{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    text-align: center;
+    height: 22em;
+    z-index: 2;
+}
+
+#header_bienvenida{
+    font-family: 'Apricots', sans-serif;
+    letter-spacing: 0.1em;
+    padding-top: 0.7rem;
+}
+
+#header_bienvenida > h1{
+    font-weight: 400;
+    font-size: 4rem;
+}
+
+#texto_bienvenida{
+    font-family: 'chapaza', sans-serif;
+    font-weight: 350;
+}
+
+#texto_bienvenida > p{
+    color: #474A2C;
+    padding: 1em;
+}
+
+/*UBICACION*/
+#contenedor_ubicacion {
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+}
+
+#ubicacion{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#ubicacion, #confirmar_asistencia{
+    grid-column: span 12;
+}
+
+.header_ubi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F0F7F4;
+}
+
+/*FECHA Y COMO LLEGAR*/
+
+#ubicacion {
+    color: #F0F7F4 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#invitacion{
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    text-align: center;
+}
+#direccion{  
+    display: flex;
+        flex-direction: row;
+}
+
+.contenedor_fila{
+    font-size: 0.9rem;
+}
+
+.contenedor_fila > .contenido_font:nth-child(1) {
+    border-right: solid 0.5px #F0F7F4;
+    padding-right: 0.5em;
+}
+
+.contenedor_fila > .contenido_font:nth-child(2) {
+    padding-left: 0.5em;
+}
+
+#google_maps{
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    font-size: 1em;
+}
+
+#texto_maps{
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    text-align: center; 
+}
+
+#boton_maps{
+    font-size: 1rem;
+}
+
+/*CONFIRMAR ASISTENCIA*/
+
+#confirmar_asistencia{
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+   
+}
+
+#txt_confirmar_asistencia{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+    text-align: center;
+}
+
+#respuesta{
+    display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;  
+    text-align: center;
+    grid-column: span 6;
+}
+
+#respuesta > a{
+    display: flex;
+        justify-content: center;
+        align-items: center;    
+}
+
+
+/**DRESSCODE**/
+#dresscode{
+    height: 20em;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    text-align: center;
+    padding: 1em;
+}
+
+#titulo_dresscode{
+    padding-bottom: 0.5rem;
+}
+
+/*REGALO CBU*/
+
+#descripcion_cbu{  
+    display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center; 
+    text-align: center;       
+    grid-column: span 12;
+}
+
+#descripcion_cbu > .texto_regalo{
+    padding: 0.5rem;
+}
+
+.datos_cbu{
+    font-size: 1.3em;
+}
+
+
+/*PLAYLIST_SPOTIFY*/
+
+
+#presentacion_playlist, #spotify{
+    display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    grid-column: span 12;    
+  
+}
+#header_playlist > h1{
+    color:#F0F7F4;
+}
+
+#spotify > p{
+    color:#F0F7F4;
+    text-align: center;
+
+}
+
+
+/**BOOK DE FOTOS**/
+
+#book_fotos{
+display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+grid-column: span 12; 
+}
+
+#texto_book{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+    text-align: center;
+}
+
+/**FOOTER**/
+footer{
+    background-color: #376C42 !important;
+    display: flex;
+        align-items: center;
+        justify-content: center; 
+    padding: 1em;
+    height: 5em;
+    width: 100%;
+}
+
+footer > p{
+    color:#F0F7F4;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;
+    font-size: 1.2em;
+    text-align: center;
+    letter-spacing: 0.1rem;
+}
+
+/*MEDIAQUERIS - AJUSTES DE RESOLUCION*/
+
+@media(min-width: 620px){
+    .header_font{
+        font-size: 3em;
+    }
+      .contenido_font{
+         font-size: 1.4em;
+      }
+
+    .boton_ancla{
+        padding: 0.7em;
+    }
+
+    #titulo_entrada{
+        font-size: 5em;
+    }
+
+    .separador{
+        width: 40%;
+    }
+
+
+}
+
+@media(min-width:551px) {
+    body{
+        display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        width: 70%;
+    }
+}
+
+/*FUENTES*/
+@font-face {
+    font-family: 'JosephSophia';
+    src: url(/Assets/Fonts/josephsophia/josephsophia.otf),
+         url(/Assets/Fonts/josephsophia/josephsophia.ttf),
+}
+
+@font-face {
+    font-family: 'Apricots';
+    src: url(/Assets/Fonts/Apricots.otf),
+         url(/Assets/Fonts/Apricots.ttf);
+}
+
+@font-face{
+    font-family: 'Chapaza';
+    src: url(/Assets/Fonts/chapaza/Chapaza.ttf),
+         url(/Assets/Fonts/chapaza/Chapaza\ Italic.ttf);
+}
+
+@font-face {
+    font-family: 'Edensor';
+    src: url(/ASSETS/Fonts/edensor/Edensor-FREE.otf);
+}
+
+@font-face {
+    font-family: 'Bellavoir Delight';
+    src: url('/ASSETS/Fonts/BellavoirDelight_PERSONAL_USE_ONLY.otf') format('truetype');
+  }
+
+/*ICONOS E IMAGENES*/
+.contenedor_icono{
+    position: relative;
+    padding: 1em;
+    display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+    height: 1.5rem;    
+}
+
+
+#icono_camara{
+    height: 3rem;
+    width: 3rem;
+}
+
+.icono{
+    height: 3.5rem;
+}
+
+.contenedor_img{
+    position: relative;
+       top: 5%;
+    padding: 1.5em;
+    display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+    height: 1.5rem;
+}
+
+.arabesco{
+    height: 25em;
+}
+
