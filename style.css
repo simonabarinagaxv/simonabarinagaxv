@@ -6,7 +6,7 @@
 }
 
 body{
-    background-image: url(/ASSETS/img/5.png);
+    background-image: url(ASSETS/img/5.png);
     font-size: 15px;
     margin: 0 auto;
 }
@@ -91,7 +91,7 @@ a{
 /*PRESENTACION - FECHA Y DRESSCODE EVENTO*/
 
 #entrada{
-    background-image: url(/Assets/fotoportada.jpg);
+    background-image: url(Assets/fotoportada.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -407,30 +407,30 @@ footer > p{
 /*FUENTES*/
 @font-face {
     font-family: 'JosephSophia';
-    src: url(/Assets/Fonts/josephsophia/josephsophia.otf),
-         url(/Assets/Fonts/josephsophia/josephsophia.ttf),
+    src: url(Assets/Fonts/josephsophia/josephsophia.otf),
+         url(Assets/Fonts/josephsophia/josephsophia.ttf),
 }
 
 @font-face {
     font-family: 'Apricots';
-    src: url(/Assets/Fonts/Apricots.otf),
-         url(/Assets/Fonts/Apricots.ttf);
+    src: url(Assets/Fonts/Apricots.otf),
+         url(Assets/Fonts/Apricots.ttf);
 }
 
 @font-face{
     font-family: 'Chapaza';
-    src: url(/Assets/Fonts/chapaza/Chapaza.ttf),
-         url(/Assets/Fonts/chapaza/Chapaza\ Italic.ttf);
+    src: url(Assets/Fonts/chapaza/Chapaza.ttf),
+         url(Assets/Fonts/chapaza/Chapaza\ Italic.ttf);
 }
 
 @font-face {
     font-family: 'Edensor';
-    src: url(/ASSETS/Fonts/edensor/Edensor-FREE.otf);
+    src: url(ASSETS/Fonts/edensor/Edensor-FREE.otf);
 }
 
 @font-face {
     font-family: 'Bellavoir Delight';
-    src: url('/ASSETS/Fonts/BellavoirDelight_PERSONAL_USE_ONLY.otf') format('truetype');
+    src: url('ASSETS/Fonts/BellavoirDelight_PERSONAL_USE_ONLY.otf') format('truetype');
   }
 
 /*ICONOS E IMAGENES*/
