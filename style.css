@@ -6,7 +6,7 @@
 }
 
 body{
-    background-image: url(ASSETS/img/5.png);
+    background-image: url("ASSETS/img/5.png");
     font-size: 15px;
     margin: 0 auto;
 }
@@ -91,7 +91,7 @@ a{
 /*PRESENTACION - FECHA Y DRESSCODE EVENTO*/
 
 #entrada{
-    background-image: url(Assets/fotoportada.jpg);
+    background-image: url("/ASSETS/fotoportada.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
