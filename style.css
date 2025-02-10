@@ -6,14 +6,14 @@
 }
 
 body{
-    background-image: url("simobarinagaxv/ASSETS/img/5.png");
+    background-image: url("ASSETS/img/5.png");
     font-size: 15px;
     margin: 0 auto;
 }
 
 section{
     display: grid;
-        grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     height: 25em;
     padding: 1em;
 }
@@ -25,18 +25,15 @@ section:nth-child(odd) {
 
 section:nth-child(even) {
     background-color: #F0F7F4 !important;
-   
 }
 
 a{
     text-decoration: none;
 }
 
-
 .contenedor_tarjetas { 
     grid-column: span 12;  
 }
-
 
 .contenido_font{
     color: #474A2C;
@@ -45,27 +42,26 @@ a{
     font-size: 1.2em;
     letter-spacing: 0.6px;
     padding: 0.5em;
+}
 
- }
-
- .header_font{
+.header_font{
     color: #376C42;
     font-family: 'Apricots', sans-serif;
     font-weight: 400;
     font-size: 5rem;
     letter-spacing: 0.1em;
- }
+}
 
- .color_invertido{
+.color_invertido{
     color: #F0F7F4;
- }
+}
 
- .contenedor_fila{
+.contenedor_fila{
     display: flex;
-        flex-direction: row;
- }
+    flex-direction: row;
+}
 
- /*BOTONES*/
+/*BOTONES*/
 .contenedor_boton{
     padding:1em;
 }
@@ -87,18 +83,15 @@ a{
     color: #474A2C;
 }
 
-
 /*PRESENTACION - FECHA Y DRESSCODE EVENTO*/
-
 #entrada{
-    background-image: url("/ASSETS/fotoportada.jpg");
+    background-image: url("ASSETS/fotoportada.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     color: #F0F7F4;
     height: 100vh;
 }
-
 
 #entrada::before{
     background-color: #0c0d086e;
@@ -109,7 +102,6 @@ a{
     z-index: 1;
 }
 
-
 #titulo_entrada, #info_evento, .ver_mas{
     grid-column: span 12;
     z-index: 2;
@@ -117,12 +109,11 @@ a{
 
 #titulo_entrada{
     display: flex;
-        justify-content: center;
-        font-size: 3.5em;    
+    justify-content: center;
+    font-size: 3.5em;    
     text-align: center;
     position: relative;
-        top: 5%;
-   
+    top: 5%;
 }
 
 #titulo_principal{
@@ -135,9 +126,9 @@ a{
 /*BIENVENIDA*/
 #bienvenida{
     display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     height: 22em;
     z-index: 2;
@@ -167,8 +158,8 @@ a{
 /*UBICACION*/
 #contenedor_ubicacion {
     display: flex;
-        flex-direction: column;
-        justify-content: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #ubicacion{
@@ -188,7 +179,6 @@ a{
 }
 
 /*FECHA Y COMO LLEGAR*/
-
 #ubicacion {
     color: #F0F7F4 !important;
     display: flex;
@@ -199,14 +189,14 @@ a{
 
 #invitacion{
     display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 #direccion{  
     display: flex;
-        flex-direction: row;
+    flex-direction: row;
 }
 
 .contenedor_fila{
@@ -224,17 +214,17 @@ a{
 
 #google_maps{
     display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-size: 1em;
 }
 
 #texto_maps{
     display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center; 
 }
 
@@ -243,45 +233,42 @@ a{
 }
 
 /*CONFIRMAR ASISTENCIA*/
-
 #confirmar_asistencia{
     display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #txt_confirmar_asistencia{
     display: flex;
-        align-items: center;
-        justify-content: center;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
 #respuesta{
     display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;  
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;  
     text-align: center;
     grid-column: span 6;
 }
 
 #respuesta > a{
     display: flex;
-        justify-content: center;
-        align-items: center;    
+    justify-content: center;
+    align-items: center;    
 }
-
 
 /**DRESSCODE**/
 #dresscode{
     height: 20em;
     display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
     padding: 1em;
 }
@@ -291,12 +278,11 @@ a{
 }
 
 /*REGALO CBU*/
-
 #descripcion_cbu{  
     display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; 
     text-align: center;       
     grid-column: span 12;
 }
@@ -309,18 +295,15 @@ a{
     font-size: 1.3em;
 }
 
-
 /*PLAYLIST_SPOTIFY*/
-
-
 #presentacion_playlist, #spotify{
     display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     grid-column: span 12;    
-  
 }
+
 #header_playlist > h1{
     color:#F0F7F4;
 }
@@ -328,24 +311,21 @@ a{
 #spotify > p{
     color:#F0F7F4;
     text-align: center;
-
 }
 
-
 /**BOOK DE FOTOS**/
-
 #book_fotos{
-display: flex;
+    display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-grid-column: span 12; 
+    grid-column: span 12; 
 }
 
 #texto_book{
     display: flex;
-        align-items: center;
-        justify-content: center;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
@@ -353,8 +333,8 @@ grid-column: span 12;
 footer{
     background-color: #376C42 !important;
     display: flex;
-        align-items: center;
-        justify-content: center; 
+    align-items: center;
+    justify-content: center; 
     padding: 1em;
     height: 5em;
     width: 100%;
@@ -375,9 +355,9 @@ footer > p{
     .header_font{
         font-size: 3em;
     }
-      .contenido_font{
-         font-size: 1.4em;
-      }
+    .contenido_font{
+        font-size: 1.4em;
+    }
 
     .boton_ancla{
         padding: 0.7em;
@@ -390,16 +370,14 @@ footer > p{
     .separador{
         width: 40%;
     }
-
-
 }
 
 @media(min-width:551px) {
     body{
         display:flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         width: 70%;
     }
 }
@@ -407,43 +385,42 @@ footer > p{
 /*FUENTES*/
 @font-face {
     font-family: 'JosephSophia';
-    src: url(Assets/Fonts/josephsophia/josephsophia.otf),
-         url(Assets/Fonts/josephsophia/josephsophia.ttf),
+    src: url('ASSETS/Fonts/josephsophia/josephsophia.otf'),
+         url('ASSETS/Fonts/josephsophia/josephsophia.ttf');
 }
 
 @font-face {
     font-family: 'Apricots';
-    src: url(Assets/Fonts/Apricots.otf),
-         url(Assets/Fonts/Apricots.ttf);
+    src: url('ASSETS/Fonts/Apricots.otf'),
+         url('ASSETS/Fonts/Apricots.ttf');
 }
 
 @font-face{
     font-family: 'Chapaza';
-    src: url(Assets/Fonts/chapaza/Chapaza.ttf),
-         url(Assets/Fonts/chapaza/Chapaza\ Italic.ttf);
+    src: url('ASSETS/Fonts/chapaza/Chapaza.ttf'),
+         url('ASSETS/Fonts/chapaza/Chapaza\ Italic.ttf');
 }
 
 @font-face {
     font-family: 'Edensor';
-    src: url(ASSETS/Fonts/edensor/Edensor-FREE.otf);
+    src: url('ASSETS/Fonts/edensor/Edensor-FREE.otf');
 }
 
 @font-face {
     font-family: 'Bellavoir Delight';
     src: url('ASSETS/Fonts/BellavoirDelight_PERSONAL_USE_ONLY.otf') format('truetype');
-  }
+}
 
 /*ICONOS E IMAGENES*/
 .contenedor_icono{
     position: relative;
     padding: 1em;
     display: flex;
-        flex-direction: column;
-        align-items:center;
-        justify-content: center;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
     height: 1.5rem;    
 }
-
 
 #icono_camara{
     height: 3rem;
@@ -456,16 +433,15 @@ footer > p{
 
 .contenedor_img{
     position: relative;
-       top: 5%;
+    top: 5%;
     padding: 1.5em;
     display: flex;
-        flex-direction: column;
-        align-items:center;
-        justify-content: center;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
     height: 1.5rem;
 }
 
 .arabesco{
     height: 25em;
 }
-
